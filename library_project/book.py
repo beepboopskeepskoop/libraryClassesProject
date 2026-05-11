@@ -1,12 +1,19 @@
 class Book():
-    def __init__(self, book_id, title, author, date):
-        self.book_id = book_id
+    def __init__(self, title, author, isbn):
         self.title = title
         self.author = author
-        self.date = date
+        self.isbn = isbn
+        self.available = None
 
-    def display(self):
-        print(f"ID - {self.book_id}")
-        print(f"TITLE - {self.title}")
-        print(f"AUTHOR - {self.author}")
-        print(f"BORROWED - {self.borrowed}")
+    def mark_available(self):
+        return self.available == True
+    
+    def mark_unavailable(self):
+        return self.available == False
+    
+    def is_available(self):
+        pass
+        
+x = Book("Hello", "Testing", 123)
+Book.mark_available(x)
+Book.is_available(x)
