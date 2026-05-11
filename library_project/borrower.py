@@ -1,14 +1,18 @@
 class Borrower():
-    def __init__(self, name, borrower_id, loans):
+    def __init__(self, name, borrower_id):
         self.name = name
         self.borrower_id = borrower_id
-        self.loans = loans
+        self.loans = []
 
     def add_loan(self, loan):
-        pass
+        self.loans.append(loan)
 
     def list_current_loans(self):
-        pass
+        print(f"Borrower: {self.name} (ID: {self.borrower_id})")
+        for loan in self.loans:
+            loan.display()
 
     def has_overdue_loans(self):
-        pass
+        for loan in self.lones:
+            if loan.is_overdue():
+                overdue = True
