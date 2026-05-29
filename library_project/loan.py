@@ -13,9 +13,10 @@ class Loan():
 
     def is_overdue():
         borrow_period = 21
-        today = date.today()
         due_date = timedelta(day = (borrow_period))
-        
+        if date.today() > due_date:
+            return True
 
     def calculate_fine():
-        pass
+        if .is_overdue == True:
+

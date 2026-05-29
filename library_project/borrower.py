@@ -15,4 +15,4 @@ class Borrower():
     def has_overdue_loans(self):
         for loan in self.lones:
             if loan.is_overdue():
-                overdue = True
+                return True
