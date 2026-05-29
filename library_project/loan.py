@@ -1,4 +1,4 @@
-import datetime as date, datetime, timedelta
+from datetime import datetime as date, datetime, timedelta
 
 class Loan():
     def __init__(self, book, borrower, borrow_date, due_date, returned):
@@ -13,9 +13,10 @@ class Loan():
 
     def is_overdue():
         borrow_period = 21
-        today = date.today()
         due_date = timedelta(day = (borrow_period))
-        
+        if date.today() > due_date:
+            return True
 
     def calculate_fine():
-        pass
+        if .is_overdue == True:
+
