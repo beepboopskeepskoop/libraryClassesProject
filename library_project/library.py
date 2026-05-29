@@ -19,4 +19,4 @@ class Library():
         pass    
 
     def search_by_title(self, title):
-        pass
+        print("yay")

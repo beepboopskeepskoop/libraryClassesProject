@@ -6,14 +6,15 @@ class Book():
         self.available = None
 
     def mark_available(self):
-        return self.available == True
-    
+        self.available = True
+        return
+
     def mark_unavailable(self):
-        return self.available == False
+        self.available = False
+        return
     
     def is_available(self):
-        pass
-        
-x = Book("Hello", "Testing", 123)
-Book.mark_available(x)
-Book.is_available(x)
+        if self.available == True:
+            return self
+        else: 
+            print("error")

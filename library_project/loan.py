@@ -1,4 +1,4 @@
-import datetime as date, datetime, timedelta
+from datetime import datetime as date, datetime, timedelta
 
 class Loan():
     def __init__(self, book, borrower, borrow_date, due_date, returned):
